@@ -13,6 +13,7 @@ object Application extends Controller {
   val lgl =new Linggle("hbase-site.xml", "linggle-web1t")
   val df = new java.text.DecimalFormat()
 
+
   def index = Action { Ok(views.html.index("hi"))}
   
   def query(q: String) = Action {
